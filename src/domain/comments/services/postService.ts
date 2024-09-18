@@ -1,6 +1,5 @@
-import { get } from 'http';
 import { v4 as uuidv4 } from 'uuid';
-import { openDatabase, createTables } from 'src/db/database';
+import { openDatabase, createTables } from '../../../db/database';
 
 export default {
     async getAllPosts(){
