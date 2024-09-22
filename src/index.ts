@@ -10,8 +10,8 @@ app.use(express.json());
 // Iniciar o banco de dados e criar tabelas
 createTables();
 
-app.use('/api', postRouter);
-app.use('/api', commentRouter);
+app.use('/', postRouter);
+app.use('/', commentRouter);
 
 // Iniciando o servidor
 app.listen(port, () => {
